@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+jinja2
+python-multipart
+openai
+python-dotenv==1.0.0
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.2
+faiss-cpu==1.7.4
+markdown==3.5.1
