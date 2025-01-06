@@ -18,10 +18,10 @@ export default function ChatInterface() {
     setInputMessage('')
     setIsLoading(true)
 
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+   // const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
     try {
-      const response = await fetch(`${API_URL}/api/chat`, {
+      const response = await fetch(`https://crustdataproject.onrender.com/api/chat`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

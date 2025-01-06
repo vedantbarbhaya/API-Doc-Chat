@@ -72,3 +72,48 @@
 2025-01-06 00:12:15,512 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
 2025-01-06 00:12:15,512 - crustdata_assistant - INFO - Loaded existing vector store
 2025-01-06 00:12:15,520 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:03:29,384 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:03:29,415 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:03:29,416 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:03:29,425 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:05:14,066 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:05:14,095 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:05:14,095 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:05:14,104 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:05:35,274 - crustdata_assistant - INFO - Processing message: How do I search for people given their current tit...
+2025-01-06 01:05:41,462 - crustdata_assistant - INFO - Successfully generated response
+2025-01-06 01:05:59,436 - crustdata_assistant - INFO - Processing message: How do I search for people given their current tit...
+2025-01-06 01:06:06,337 - crustdata_assistant - INFO - Successfully generated response
+2025-01-06 01:12:21,430 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:12:21,458 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:12:21,458 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:12:21,466 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:15:58,848 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:15:58,878 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:15:58,878 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:15:58,893 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:16:21,595 - crustdata_assistant - INFO - Processing message: How do I search for people given their current tit...
+2025-01-06 01:16:28,043 - crustdata_assistant - INFO - Successfully generated response
+2025-01-06 01:16:40,521 - crustdata_assistant - INFO - Processing message: You
+How do I search for people given their current...
+2025-01-06 01:16:45,446 - crustdata_assistant - INFO - Successfully generated response
+2025-01-06 01:19:53,144 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:19:53,170 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:19:53,170 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:19:53,178 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:33:51,680 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:33:51,726 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:33:51,726 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:33:51,735 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:35:05,003 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:35:05,027 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:35:05,027 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:35:05,035 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:35:26,062 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:35:26,090 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:35:26,090 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:35:26,106 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 01:35:44,883 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 01:35:44,914 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 01:35:44,914 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 01:35:44,928 - crustdata_assistant - INFO - ChatHandler initialized successfully

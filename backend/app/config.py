@@ -38,5 +38,7 @@ VECTOR_STORE_SETTINGS = {
 # API settings
 CORS_ORIGINS = [
     "http://localhost:5173",  # Vite default
-    "http://localhost:3000"   # Alternative frontend port
+    "http://localhost:3000"   # Alternative frontend port,
+    "https://crustdataproject.onrender.com",
+    "https://crust-data-project.vercel.app"
 ]

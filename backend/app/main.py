@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException,Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -41,15 +41,18 @@ async def health_check():
     return {"status": "healthy"}
 
 @app.post("/api/chat")
-async def chat(message: ChatMessage):
+async def chat(message: ChatMessage,  request: Request):
     """Chat endpoint that handles user messages"""
     try:
+        frontend_url = request.client.host
+        print(f"Request coming from: {frontend_url}")
         response = await chat_handler.get_response(
             message.message,
             conversation_id=message.conversation_id
         )
         return response
     except Exception as e:
+        print()
         logging.error(f"Error in chat endpoint: {str(e)}")
         raise HTTPException(
             status_code=500,
