@@ -40,3 +40,5 @@ CORS_ORIGINS = [
     "http://localhost:5173",  # Vite default
     "http://localhost:3000"   # Alternative frontend port
 ]
+
+API_TOKEN = "your_api_token_here"

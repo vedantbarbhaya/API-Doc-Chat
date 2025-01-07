@@ -72,3 +72,637 @@
 2025-01-06 00:12:15,512 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
 2025-01-06 00:12:15,512 - crustdata_assistant - INFO - Loaded existing vector store
 2025-01-06 00:12:15,520 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 17:12:24,977 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 17:12:25,025 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 17:12:25,025 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 17:12:25,595 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 17:13:06,689 - crustdata_assistant - INFO - Processing message: How do I search for people given their current tit...
+2025-01-06 17:13:11,441 - crustdata_assistant - INFO - Running API call in simulation mode
+2025-01-06 17:16:19,747 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 17:16:19,794 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 17:16:19,794 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 17:16:20,330 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 17:25:49,458 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 17:25:49,486 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 17:25:49,486 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 17:25:50,028 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 17:58:54,492 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 17:58:54,542 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 17:58:54,542 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 17:58:54,559 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 18:00:00,262 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:00:00,296 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:00:00,297 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:00:00,317 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 18:00:28,082 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:00:28,155 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:00:28,155 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:00:32,470 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:00:32,501 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:00:32,501 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:00:51,194 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:00:51,219 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:00:51,219 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:00:51,227 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 18:01:33,280 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:01:33,340 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:01:33,340 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:01:33,349 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 18:02:43,991 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:02:44,017 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:02:44,017 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:02:44,038 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 18:11:19,304 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:11:19,377 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:11:19,377 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:11:19,391 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 18:18:40,707 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 18:18:40,734 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 18:18:40,734 - crustdata_assistant - INFO - Loaded existing vector store
+2025-01-06 18:18:40,742 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 22:37:25,942 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 22:37:25,989 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 22:37:25,989 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 22:37:25,997 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 22:37:25,998 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 22:38:00,572 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 22:38:01,263 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 22:44:02,398 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 22:44:02,424 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 22:44:02,424 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 22:44:02,434 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 22:44:02,435 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 22:48:21,466 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 22:48:21,493 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 22:48:21,493 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 22:48:21,501 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 22:48:21,501 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 22:48:29,826 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 22:48:29,827 - crustdata_assistant - INFO - fc6e33a7-0646-4d13-ad03-a0f021d6ddce
+2025-01-06 22:48:29,828 - crustdata_assistant - INFO - add conversation context
+2025-01-06 22:48:31,636 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 22:48:52,483 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 22:48:52,504 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 22:48:52,504 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 22:48:52,512 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 22:48:52,512 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 22:49:06,251 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 22:49:06,252 - crustdata_assistant - INFO - fc6e33a7-0646-4d13-ad03-a0f021d6ddce
+2025-01-06 22:49:06,252 - crustdata_assistant - INFO - add conversation context
+2025-01-06 22:49:06,707 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 22:50:30,316 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 22:50:30,339 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 22:50:30,339 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 22:50:30,348 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 22:50:30,348 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 22:50:35,780 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 22:50:35,781 - crustdata_assistant - INFO - fc6e33a7-0646-4d13-ad03-a0f021d6ddce
+2025-01-06 22:50:35,781 - crustdata_assistant - INFO - added conversation context
+2025-01-06 22:50:35,782 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 22:50:36,465 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 22:51:00,068 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 22:51:00,068 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 22:51:00,069 - crustdata_assistant - INFO - added conversation context
+2025-01-06 22:51:00,069 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 22:51:00,555 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 22:52:36,861 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 22:52:36,887 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 22:52:36,887 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 22:52:36,895 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 22:53:02,489 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 22:53:02,515 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 22:53:02,515 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 22:53:02,523 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 22:53:02,524 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template="You are an AI assistant. \n                          Use the provided documentation to answer queries.\n                          If it's not found in the context, state that you don't have the information.\n\n                          Context: {context}\n                       ")), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 22:53:02,524 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 22:53:18,243 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 22:53:18,246 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 22:53:18,246 - crustdata_assistant - INFO - added conversation context
+2025-01-06 22:53:18,246 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 22:53:18,724 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 23:14:00,091 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:14:00,141 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:14:00,141 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 23:14:00,150 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:14:00,151 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template="You are an AI assistant. \n                          Use the provided documentation to answer queries.\n                          If it's not found in the context, state that you don't have the information.\n\n                          Context: {context}\n                       ")), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:14:00,151 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:14:09,324 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 23:14:09,325 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:14:09,325 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:14:09,325 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 23:14:09,863 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 23:15:15,828 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 23:15:15,829 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:15:15,829 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:15:15,829 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 23:15:16,408 - crustdata_assistant - ERROR - Error in get_response: 
+2025-01-06 23:15:47,770 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:15:47,804 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:15:47,804 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 23:15:47,819 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:15:47,819 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template="You are an AI assistant. \n                          Use the provided documentation to answer queries.\n                          If it's not found in the context, state that you don't have the information.\n\n                          Context: {context}\n                       ")), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:15:47,820 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:15:58,131 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 23:15:58,132 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:15:58,133 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:15:58,133 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 23:15:58,590 - crustdata_assistant - ERROR - Error in get_response:
+Traceback (most recent call last):
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/api/chat_handler.py", line 198, in get_response
+    response_text = await self.retrieval_chain.ainvoke(user_question)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 2087, in ainvoke
+    input = await step.ainvoke(
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 2719, in ainvoke
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_core/retrievers.py", line 137, in ainvoke
+    return await self.aget_relevant_documents(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_core/retrievers.py", line 280, in aget_relevant_documents
+    raise e
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_core/retrievers.py", line 273, in aget_relevant_documents
+    result = await self._aget_relevant_documents(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_core/vectorstores.py", line 674, in _aget_relevant_documents
+    docs = await self.vectorstore.asimilarity_search(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_community/vectorstores/faiss.py", line 536, in asimilarity_search
+    docs_and_scores = await self.asimilarity_search_with_score(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_community/vectorstores/faiss.py", line 424, in asimilarity_search_with_score
+    docs = await self.asimilarity_search_with_score_by_vector(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_community/vectorstores/faiss.py", line 361, in asimilarity_search_with_score_by_vector
+    return await run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_core/runnables/config.py", line 493, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/langchain_community/vectorstores/faiss.py", line 300, in similarity_search_with_score_by_vector
+    scores, indices = self.index.search(vector, k if filter is None else fetch_k)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/.venv/lib/python3.11/site-packages/faiss/class_wrappers.py", line 329, in replacement_search
+    assert d == self.d
+           ^^^^^^^^^^^
+AssertionError
+2025-01-06 23:17:16,148 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:17:16,172 - crustdata_assistant - ERROR - Error loading vector store: Error in faiss::FileIOReader::FileIOReader(const char *) at /Users/runner/work/faiss-wheels/faiss-wheels/faiss/faiss/impl/io.cpp:68: Error: 'f' failed: could not open /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index/index.faiss for reading: No such file or directory
+2025-01-06 23:17:16,173 - crustdata_assistant - INFO - No existing vectorstore found; creating a new one.
+2025-01-06 23:17:16,173 - crustdata_assistant - INFO - Loaded markdown file: api_docs_1.md
+2025-01-06 23:17:16,173 - crustdata_assistant - INFO - Loaded markdown file: api_docs_4.md
+2025-01-06 23:17:16,174 - crustdata_assistant - INFO - Loaded markdown file: api_docs_2.md
+2025-01-06 23:17:16,174 - crustdata_assistant - INFO - Processing document: api_docs_1
+2025-01-06 23:17:16,174 - crustdata_assistant - INFO - Processing document: api_docs_4
+2025-01-06 23:17:16,174 - crustdata_assistant - INFO - Processing document: api_docs_2
+2025-01-06 23:21:02,319 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:21:02,352 - crustdata_assistant - ERROR - Error loading vector store: Error in faiss::FileIOReader::FileIOReader(const char *) at /Users/runner/work/faiss-wheels/faiss-wheels/faiss/faiss/impl/io.cpp:68: Error: 'f' failed: could not open /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index/index.faiss for reading: No such file or directory
+2025-01-06 23:21:02,352 - crustdata_assistant - INFO - No existing vectorstore found; creating a new one.
+2025-01-06 23:21:02,353 - crustdata_assistant - INFO - Loaded markdown file: api_docs_1.md
+2025-01-06 23:21:02,354 - crustdata_assistant - INFO - Loaded markdown file: api_docs_4.md
+2025-01-06 23:21:02,354 - crustdata_assistant - INFO - Loaded markdown file: api_docs_2.md
+2025-01-06 23:21:02,354 - crustdata_assistant - INFO - Processing document: api_docs_1
+2025-01-06 23:21:02,355 - crustdata_assistant - INFO - Processing document: api_docs_4
+2025-01-06 23:21:02,355 - crustdata_assistant - INFO - Processing document: api_docs_2
+2025-01-06 23:22:31,681 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:22:31,709 - crustdata_assistant - ERROR - Error loading vector store: Error in faiss::FileIOReader::FileIOReader(const char *) at /Users/runner/work/faiss-wheels/faiss-wheels/faiss/faiss/impl/io.cpp:68: Error: 'f' failed: could not open /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index/index.faiss for reading: No such file or directory
+2025-01-06 23:22:31,709 - crustdata_assistant - INFO - No existing vectorstore found; creating a new one.
+2025-01-06 23:22:31,709 - crustdata_assistant - INFO - Loaded markdown file: api_docs_1.md
+2025-01-06 23:22:31,709 - crustdata_assistant - INFO - Loaded markdown file: api_docs_4.md
+2025-01-06 23:22:31,710 - crustdata_assistant - INFO - Loaded markdown file: api_docs_2.md
+2025-01-06 23:22:31,710 - crustdata_assistant - INFO - Processing document: api_docs_1
+2025-01-06 23:22:31,710 - crustdata_assistant - INFO - Processing document: api_docs_4
+2025-01-06 23:22:31,710 - crustdata_assistant - INFO - Processing document: api_docs_2
+2025-01-06 23:22:33,816 - crustdata_assistant - INFO - Added 147 docs to vectorstore.
+2025-01-06 23:22:33,818 - crustdata_assistant - INFO - Saved vector store to /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:22:33,818 - crustdata_assistant - INFO - Vectorstore created and saved.
+2025-01-06 23:22:33,830 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:22:33,831 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template="You are an AI assistant. \n                          Use the provided documentation to answer queries.\n                          If it's not found in the context, state that you don't have the information.\n\n                          Context: {context}\n                       ")), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:22:33,831 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:22:44,993 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 23:22:44,994 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:22:44,994 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:22:44,994 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 23:22:46,572 - crustdata_assistant - INFO - response_text:I don't have the information on how to search for people based on their current title, current company, and location.
+2025-01-06 23:22:46,573 - crustdata_assistant - INFO - Processing message for conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: I don't have the information on how to search for 
+2025-01-06 23:31:53,809 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:31:53,833 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:31:53,833 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 23:31:53,845 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:31:53,845 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template="You are an AI assistant. \n                          Use the provided documentation to answer queries.\n                          If it's not found in the context, state that you don't have the information.\n\n                          Context: {context}\n                       ")), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:31:53,845 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:32:04,281 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:32:04,351 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:32:04,351 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 23:32:04,371 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:32:04,376 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template="You are an AI assistant. \n                          Use the provided documentation to answer queries.\n                          If it's not found in the context, state that you don't have the information.\n\n                          Context: {context}\n                       ")), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:32:04,385 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:32:33,320 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:32:33,342 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:32:33,342 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 23:32:33,350 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:32:33,350 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template="You are an AI assistant. \n                          Use the provided documentation to answer queries.\n                          If it's not found in the context, state that you don't have the information.\n\n                          Context: {context}\n                       ")), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:32:33,350 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:32:42,699 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 23:32:42,700 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:32:42,700 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:32:42,700 - crustdata_assistant - INFO - user_question:
+RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 23:32:43,303 - crustdata_assistant - INFO - === RAG Retrieved Documents ===
+2025-01-06 23:32:43,303 - crustdata_assistant - INFO - Doc #1 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:32:43,303 - crustdata_assistant - INFO - Doc #1 content (truncated): | Filter Type                | Description                                           | Properties | Value/Sub-filter |
+|----------------------------|-------------------------------------------------------|------------|------------------|
+| `CURRENT_COMPANY`          | Specifies the current company o...
+2025-01-06 23:32:43,303 - crustdata_assistant - INFO - Doc #2 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:32:43,304 - crustdata_assistant - INFO - Doc #2 content (truncated): #### 2. People with Specific First Name from a Specific Company Given Company’s LinkedIn URL
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token ...
+2025-01-06 23:32:43,304 - crustdata_assistant - INFO - Doc #3 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:32:43,304 - crustdata_assistant - INFO - Doc #3 content (truncated): ### More Examples
+
+#### 1. People with Specific First Name from a Specific Company Given Company’s Domain
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Accept-L...
+2025-01-06 23:32:44,665 - crustdata_assistant - INFO - response_text:I don't have the information on how to search for people given their current title, current company, and location.
+2025-01-06 23:32:44,665 - crustdata_assistant - INFO - Processing message for conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: I don't have the information on how to search for 
+2025-01-06 23:34:46,746 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:34:46,784 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:34:46,784 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 23:34:46,792 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:34:46,792 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template='You are an AI assistant with access to specific documentation.\n        Use the documentation **verbatim** to provide an answer about searching for people (like current title, company, location).\n        **If** the context mentions filter types or code examples, please include them in your response.\n        If the info truly isn’t in the docs, say so.\n\n        Context: {context}\n        ')), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:34:46,792 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:35:10,272 - crustdata_assistant - INFO - Initializing ChatHandler
+2025-01-06 23:35:10,294 - crustdata_assistant - INFO - Loaded vector store from /Users/vedantbarbhaya/PycharmProjects/CrustDataProject/CrustDataProject/backend/app/vector_store/faiss_index
+2025-01-06 23:35:10,294 - crustdata_assistant - INFO - Loaded existing vectorstore from disk.
+2025-01-06 23:35:10,301 - crustdata_assistant - INFO - CrustDataAgent initialized.
+2025-01-06 23:35:10,301 - crustdata_assistant - INFO - prompt:
+input_variables=['context', 'question'] messages=[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=['context'], template='You are an AI assistant with access to specific documentation.\n        Use the documentation **verbatim** to provide an answer about searching for people (like current title, company, location).\n        **If** the context mentions filter types or code examples, please include them in your response.\n        If the info truly isn’t in the docs, say so.\n\n        Context: {context}\n        ')), HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='{question}'))]
+2025-01-06 23:35:10,301 - crustdata_assistant - INFO - ChatHandler initialized successfully
+2025-01-06 23:35:28,345 - crustdata_assistant - INFO - New user message: How do I search for people given their current tit...
+2025-01-06 23:35:28,346 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:35:28,346 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:35:28,346 - crustdata_assistant - INFO - Final prompt to LLM (truncated): RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+New question:
+How do I search for people given their current title, current company and location?
+2025-01-06 23:35:28,817 - crustdata_assistant - INFO - === RAG Retrieved Documents ===
+2025-01-06 23:35:28,818 - crustdata_assistant - INFO - Doc #1 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:35:28,818 - crustdata_assistant - INFO - Doc #1 content (truncated): | Filter Type                | Description                                           | Properties | Value/Sub-filter |
+|----------------------------|-------------------------------------------------------|------------|------------------|
+| `CURRENT_COMPANY`          | Specifies the current company o...
+2025-01-06 23:35:28,818 - crustdata_assistant - INFO - Doc #2 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:35:28,818 - crustdata_assistant - INFO - Doc #2 content (truncated): #### 2. People with Specific First Name from a Specific Company Given Company’s LinkedIn URL
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token ...
+2025-01-06 23:35:28,818 - crustdata_assistant - INFO - Doc #3 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:35:28,818 - crustdata_assistant - INFO - Doc #3 content (truncated): ### More Examples
+
+#### 1. People with Specific First Name from a Specific Company Given Company’s Domain
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Accept-L...
+2025-01-06 23:35:36,493 - crustdata_assistant - INFO - response_text:To search for people based on their current title, current company, and location, you can use the following filter types in your API request:
+
+1. **CURRENT_TITLE**: Specifies the current title of the person.
+   - **Types**: [in, not in]
+   - **Value**: List of strings. Case insensitive contains matching for each of the strings. 
+   - **Example**: `["ceo", "founder", "director"]` will match all profiles with any current job title(s) having any of these strings.
+
+2. **CURRENT_COMPANY**: Specifies the current company of the person.
+   - **Types**: [in, not in]
+   - **Value**: List of strings. You can specify names, domains, or LinkedIn URL of the companies.
+   - **Example**: `"Serve Robotics"`, `"serverobotics.com"`, `"https://www.linkedin.com/company/serverobotics"`.
+
+3. **LOCATION**: While the documentation does not provide explicit details on the LOCATION filter, you would typically include a filter for the location in a similar manner to the others.
+
+Here is an example curl command that demonstrates how to search for people with a specific title from a specific company:
+
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+            "filter_type": "CURRENT_TITLE",
+            "type": "in",
+            "value": ["ceo"]
+        },
+        {
+            "filter_type": "CURRENT_COMPANY",
+            "type": "in",
+            "value": ["https://www.linkedin.com/company/serverobotics"]
+        },
+        {
+            "filter_type": "LOCATION",
+            "type": "in",
+            "value": ["San Francisco"]
+        }
+    ],
+    "page": 1
+}'
+```
+
+Make sure to replace the placeholder values such as `$token` and location as needed for your specific search criteria.
+2025-01-06 23:35:36,494 - crustdata_assistant - INFO - Processing message for conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: To search for people based on their current title,
+2025-01-06 23:35:36,495 - crustdata_assistant - INFO - Validating API call in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: curl --location 'https://api.crustdata.com/screener/person/s
+2025-01-06 23:35:36,759 - crustdata_assistant - INFO - Attempting to fix error in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: {'detail': 'Invalid token.'}
+2025-01-06 23:36:01,220 - crustdata_assistant - INFO - New user message: Can I add more filters to this?...
+2025-01-06 23:36:01,221 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:36:01,221 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:36:01,221 - crustdata_assistant - INFO - Final prompt to LLM (truncated): RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+ASSISTANT: To search for people based on their current title, current company, and location, you can use the following filter types in your API request:
+
+1. **CURRENT_TITLE**: Specifies the current title of the person.
+   - **Types**: [in, not in]
+   - **Value**: List of strings. Case insensitive contains matching for each of the strings. 
+   - **Example**: `["ceo", "founder", "director"]` will match all profiles with any current job title(s) having any of these strings.
+
+2. **CURRENT_COMPANY**: Specifies the current company of the person.
+   - **Types**: [in, not in]
+   - **Value**: List of strings. You can specify names, domains, or LinkedIn URL of the companies.
+   - **Example**: `"Serve Robotics"`, `"serverobotics.com"`, `"https://www.linkedin.com/company/serverobotics"`.
+
+3. **LOCATION**: While the documentation does not provide explicit details on the LOCATION filter, you would typically include a filter for the location in a similar manner to the others.
+
+Here is an example curl command that demonstrates how to search for people with a specific title from a specific company:
+
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+            "filter_type": "CURRENT_TI
+2025-01-06 23:36:01,780 - crustdata_assistant - INFO - === RAG Retrieved Documents ===
+2025-01-06 23:36:01,780 - crustdata_assistant - INFO - Doc #1 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:36:01,780 - crustdata_assistant - INFO - Doc #1 content (truncated): | Filter Type                | Description                                           | Properties | Value/Sub-filter |
+|----------------------------|-------------------------------------------------------|------------|------------------|
+| `CURRENT_COMPANY`          | Specifies the current company o...
+2025-01-06 23:36:01,780 - crustdata_assistant - INFO - Doc #2 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:36:01,780 - crustdata_assistant - INFO - Doc #2 content (truncated): ### More Examples
+
+#### 1. People with Specific First Name from a Specific Company Given Company’s Domain
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Accept-L...
+2025-01-06 23:36:01,781 - crustdata_assistant - INFO - Doc #3 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:36:01,781 - crustdata_assistant - INFO - Doc #3 content (truncated): ```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Accept-Language: en-US,en;q=0.9' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+ ...
+2025-01-06 23:36:07,460 - crustdata_assistant - INFO - response_text:Yes, you can add more filters to your search query. The documentation provides several filter types that you can utilize in your API request. Here are some additional filter types you might consider:
+
+1. **COMPANY_HEADQUARTERS**: Specifies the headquarters location of the company.
+   - **Types**: [in, not in]
+   - **Value**: List of strings representing locations.
+
+2. **INDUSTRY**: Specifies the industry of the company.
+   - **Types**: [in, not in]
+   - **Value**: List of strings representing industry names.
+
+3. **REGION**: Specifies a region filter for the search.
+   - **Types**: [in, not in]
+   - **Value**: List of strings representing regions.
+
+You can combine these filters in your API request. Here's an example of how to include more filters in your search:
+
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+            "filter_type": "CURRENT_TITLE",
+            "type": "in",
+            "value": ["ceo"]
+        },
+        {
+            "filter_type": "CURRENT_COMPANY",
+            "type": "in",
+            "value": ["https://www.linkedin.com/company/serverobotics"]
+        },
+        {
+            "filter_type": "LOCATION",
+            "type": "in",
+            "value": ["San Francisco"]
+        },
+        {
+            "filter_type": "COMPANY_HEADQUARTERS",
+            "type": "in",
+            "value": ["United States"]
+        },
+        {
+            "filter_type": "INDUSTRY",
+            "type": "in",
+            "value": ["Software Development"]
+        }
+    ],
+    "page": 1
+}'
+```
+
+Make sure to adjust the filter values based on your specific search criteria.
+2025-01-06 23:36:07,462 - crustdata_assistant - INFO - Processing message for conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: Yes, you can add more filters to your search query
+2025-01-06 23:36:07,465 - crustdata_assistant - INFO - Validating API call in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: curl --location 'https://api.crustdata.com/screener/person/s
+2025-01-06 23:36:07,655 - crustdata_assistant - INFO - Attempting to fix error in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: {'detail': 'Invalid token.'}
+2025-01-06 23:50:45,123 - crustdata_assistant - INFO - New user message: Can you give me more examples of the search query?...
+2025-01-06 23:50:45,126 - crustdata_assistant - INFO - 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0
+2025-01-06 23:50:45,128 - crustdata_assistant - INFO - added conversation context
+2025-01-06 23:50:45,128 - crustdata_assistant - INFO - Final prompt to LLM (truncated): RECENT MESSAGES:
+USER: How do I search for people given their current title, current company and location?
+
+ASSISTANT: To search for people based on their current title, current company, and location, you can use the following filter types in your API request:
+
+1. **CURRENT_TITLE**: Specifies the current title of the person.
+   - **Types**: [in, not in]
+   - **Value**: List of strings. Case insensitive contains matching for each of the strings. 
+   - **Example**: `["ceo", "founder", "director"]` will match all profiles with any current job title(s) having any of these strings.
+
+2. **CURRENT_COMPANY**: Specifies the current company of the person.
+   - **Types**: [in, not in]
+   - **Value**: List of strings. You can specify names, domains, or LinkedIn URL of the companies.
+   - **Example**: `"Serve Robotics"`, `"serverobotics.com"`, `"https://www.linkedin.com/company/serverobotics"`.
+
+3. **LOCATION**: While the documentation does not provide explicit details on the LOCATION filter, you would typically include a filter for the location in a similar manner to the others.
+
+Here is an example curl command that demonstrates how to search for people with a specific title from a specific company:
+
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+            "filter_type": "CURRENT_TI
+2025-01-06 23:50:45,575 - crustdata_assistant - INFO - === RAG Retrieved Documents ===
+2025-01-06 23:50:45,575 - crustdata_assistant - INFO - Doc #1 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:50:45,575 - crustdata_assistant - INFO - Doc #1 content (truncated): ### More Examples
+
+#### 1. People with Specific First Name from a Specific Company Given Company’s Domain
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Accept-L...
+2025-01-06 23:50:45,575 - crustdata_assistant - INFO - Doc #2 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:50:45,575 - crustdata_assistant - INFO - Doc #2 content (truncated): ```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Accept-Language: en-US,en;q=0.9' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+ ...
+2025-01-06 23:50:45,575 - crustdata_assistant - INFO - Doc #3 metadata: {'source': 'api_docs_1'}
+2025-01-06 23:50:45,575 - crustdata_assistant - INFO - Doc #3 content (truncated): | Filter Type                | Description                                           | Properties | Value/Sub-filter |
+|----------------------------|-------------------------------------------------------|------------|------------------|
+| `CURRENT_COMPANY`          | Specifies the current company o...
+2025-01-06 23:50:54,942 - crustdata_assistant - INFO - response_text:Certainly! Here are more examples of search queries using different filter types:
+
+### Example 1: Search for People with Specific First Name from a Specific Company Given Company’s Domain
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+            "filter_type": "FIRST_NAME",
+            "type": "in",
+            "value": ["steve"]
+        },
+        {
+            "filter_type": "CURRENT_COMPANY",
+            "type": "in",
+            "value": ["buzzbold.com"]
+        }
+    ],
+    "page": 1
+}'
+```
+
+### Example 2: Search for People in Specific Companies Excluding Certain Titles
+```bash
+curl --location 'https://api.crustdata.com/screener/person/search' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json, text/plain, */*' \
+--header 'Authorization: Token $token' \
+--data '{
+    "filters": [
+        {
+            "filter_type": "CURRENT_COMPANY",
+            "type": "in",
+            "value": ["Google", "Microsoft"]
+        },
+        {
+            "filter_type": "CURRENT_TITLE",
+            "type": "not in",
+            "value": ["Software Engineer", "Data Scientist"]
+        },
+        {
+            "filter_type": "COMPANY_HEADQUARTERS",
+            "type": "in",
+            "value": ["United States", "Canada"]
+        },
+        {
+            "filter_type": "INDUSTRY",
+            "type": "in",
+            "value": ["Software Development", "Hospitals and Health Care"]
+        }
+    ],
+    "page": 1
+}'
+```
+
+These examples illustrate various ways to combine filters such as `FIRST_NAME`, `CURRENT_COMPANY`, `CURRENT_TITLE`, `COMPANY_HEADQUARTERS`, and `INDUSTRY` to refine your search for people based on specific criteria. Adjust the values as necessary for your needs.
+2025-01-06 23:50:54,947 - crustdata_assistant - INFO - Processing message for conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: Certainly! Here are more examples of search querie
+2025-01-06 23:50:54,947 - crustdata_assistant - INFO - Validating API call in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: curl --location 'https://api.crustdata.com/screener/person/s
+2025-01-06 23:50:55,209 - crustdata_assistant - INFO - Attempting to fix error in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: {'detail': 'Invalid token.'}
+2025-01-06 23:50:55,209 - crustdata_assistant - INFO - Validating API call in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: curl --location 'https://api.crustdata.com/screener/person/s
+2025-01-06 23:50:55,415 - crustdata_assistant - INFO - Attempting to fix error in conversation 55c7f1f4-4564-4db2-8b6e-9720ba7e8cf0: {'detail': 'Invalid token.'}

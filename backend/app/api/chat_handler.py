@@ -1,61 +1,94 @@
+import json
+import re
 from typing import Dict, Optional
+
 import faiss
-from langchain.vectorstores import faiss
-from langchain_community.docstore import InMemoryDocstore
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
-from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema import StrOutputParser
-
-from .. config import  VECTOR_STORE_DIR, MODEL_SETTINGS
-from ..agents.crustdata_agent import CrustDataAgent
-from ..utils import save_vectorstore, load_vectorstore
+from langchain.schema.runnable import RunnablePassthrough
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.docstore.in_memory import InMemoryDocstore
+from langchain_community.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain.schema import Document
+# --- IMPORT YOUR LOCAL MODULES/HELPERS ---
+# Adjust these import paths based on your project structure:
+from .conversation_handler import ConversationHandler  # The summarizing conversation handler
+from ..utils.file_handler import load_markdown_files, save_vectorstore, load_vectorstore
 from ..utils.logger import logger
-from ..utils.text_processor import clean_text, format_api_response
+from ..utils.text_processor import clean_text
+from ..agents.crustdataagent import CrustDataAgent
+from langchain.schema.runnable import RunnableLambda
+from ..config import (
+    VECTOR_STORE_DIR,
+    MODEL_SETTINGS,
+    VECTOR_STORE_SETTINGS,
+    OPENAI_API_KEY  # if you store your key in config
+)
 
 
-# ... your other imports ...
+# If you have an agent for API calls, you can import it here, e.g.:
+# from agents.crustdataagent import CrustDataAgent
+
 
 class ChatHandler:
+    """
+    Demonstration of a ChatHandler that:
+      - Maintains summarized conversation history
+      - Uses a vectorstore for RAG
+      - Builds a prompt combining the conversation summary+recent messages and the RAG context
+      - Sends to ChatOpenAI
+    """
+
     def __init__(self):
         logger.info("Initializing ChatHandler")
 
-        # Initialize RAG components
-        self.embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+        # 1) Embeddings & VectorStore
+        self.embeddings = OpenAIEmbeddings(
+            model=MODEL_SETTINGS["embedding_model"],
+            openai_api_key=OPENAI_API_KEY
+        )
         self.vectorstore = self.initialize_vectorstore()
+
+        # 2) LLM (Chat Model)
         self.llm = ChatOpenAI(
             model_name=MODEL_SETTINGS["chat_model"],
-            temperature=MODEL_SETTINGS["temperature"]
+            temperature=MODEL_SETTINGS["temperature"],
+            openai_api_key=OPENAI_API_KEY
         )
 
-        # Initialize agent
-        self.agent = CrustDataAgent()
+        # 3) Conversation Handler (with Summaries)
+        #    You might set a smaller or larger threshold for summarizing older messages
+        self.conversation_handler = ConversationHandler(
+            openai_api_key=OPENAI_API_KEY,
+            max_messages_without_summary=6,  # e.g., summarize older messages after 6
+            model_name="gpt-4o-mini"  # which model to use for summarizing
+        )
 
-        # Create retrieval chain
+        self.agent = CrustDataAgent(api_token="YOUR_API_TOKEN_HERE")
+
+        # 5) Build our RAG retrieval chain
         self.retrieval_chain = self.create_retrieval_chain()
+
         logger.info("ChatHandler initialized successfully")
 
-    def initialize_vectorstore(self):
-        """Initialize or load FAISS vectorstore"""
-        # Try to load existing vectorstore
+    from langchain.schema import Document  # <--- Make sure this import is at the top
+
+    def initialize_vectorstore(self) -> FAISS:
+        """
+        Initialize or load a FAISS vectorstore.
+        """
+        # Try loading existing vectorstore
         vectorstore = load_vectorstore(VECTOR_STORE_DIR, self.embeddings)
         if vectorstore:
-            logger.info("Loaded existing vector store")
+            logger.info("Loaded existing vectorstore from disk.")
             return vectorstore
 
-        # If not found, create new vectorstore
-        logger.info("Creating new vector store")
-        docs = load_markdown_files()
+        # If none exists, create a new one from your local markdown files:
+        logger.info("No existing vectorstore found; creating a new one.")
+        docs = load_markdown_files()  # Returns a dict {filename: content}
 
-        # Split documents
-        markdown_splitter = MarkdownHeaderTextSplitter(
-            headers_to_split_on=[
-                ("#", "header1"),
-                ("##", "header2"),
-                ("###", "header3"),
-            ]
-        )
-
+        # Simple text splitter (ignoring Markdown headers for brevity)
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=VECTOR_STORE_SETTINGS["chunk_size"],
             chunk_overlap=VECTOR_STORE_SETTINGS["chunk_overlap"]
@@ -64,16 +97,14 @@ class ChatHandler:
         all_splits = []
         for doc_name, content in docs.items():
             logger.info(f"Processing document: {doc_name}")
-            header_splits = markdown_splitter.split_text(content)
-            splits = text_splitter.split_documents(header_splits)
-            all_splits.extend(splits)
-            logger.info(f"Created {len(splits)} chunks from {doc_name}")
+            splits = text_splitter.split_text(content)
+            # Store each chunk for further processing
+            for chunk in splits:
+                all_splits.append((doc_name, chunk))
 
         # Create FAISS index
-        sample_embedding = self.embeddings.embed_query("sample text")
+        sample_embedding = self.embeddings.embed_query("test")
         index = faiss.IndexFlatL2(len(sample_embedding))
-
-        # Create vectorstore
         vectorstore = FAISS(
             embedding_function=self.embeddings,
             index=index,
@@ -81,36 +112,57 @@ class ChatHandler:
             index_to_docstore_id={}
         )
 
-        # Add documents to vectorstore
+        # Build Document objects to add
+        # Each chunk is now (doc_name, chunk_text), so we can store doc_name as metadata
         if all_splits:
-            vectorstore.add_documents(all_splits)
-            logger.info(f"Added {len(all_splits)} documents to vector store")
+            docs_to_add = [
+                Document(
+                    page_content=chunk_text,
+                    metadata={"source": doc_name}
+                )
+                for (doc_name, chunk_text) in all_splits
+            ]
 
-        # Save for future use
+            vectorstore.add_documents(docs_to_add)
+            logger.info(f"Added {len(docs_to_add)} docs to vectorstore.")
+
+        # Save for future usage
         save_vectorstore(vectorstore, VECTOR_STORE_DIR)
-        logger.info("Vector store created and saved")
-
+        logger.info("Vectorstore created and saved.")
         return vectorstore
 
     def create_retrieval_chain(self):
-        """Create the RAG retrieval chain"""
+        """
+        Create a retrieval chain that:
+          - Retrieves top k relevant chunks
+          - Merges them into a system prompt with placeholders
+          - Runs them through the LLM
+        """
         retriever = self.vectorstore.as_retriever(search_kwargs={"k": 3})
 
+        # Our prompt template for RAG
+        # We'll fill {context} with the retrieved docs,
+        # and {question} with the user query + conversation context.
         prompt = ChatPromptTemplate.from_messages([
-            ("system", """Use the following pieces of API documentation to answer the user's question.
-                          Always provide code examples when available in the documentation.
-                          If specific information isn't found in the context, say that you don't have that specific information in the documentation.
-                          Format API examples using markdown code blocks.
+            ("system", """You are an AI assistant with access to specific documentation.
+        Use the documentation **verbatim** to provide an answer about searching for people (like current title, company, location).
+        **If** the context mentions filter types or code examples, please include them in your response.
+        If the info truly isn’t in the docs, say so.
 
-            Context: {context}"""),
+        Context: {context}
+        """),
             ("user", "{question}")
         ])
 
+        logger.info("prompt:\n" + str(prompt))
+
+        # Compose a chain:
         chain = (
                 {
                     "context": retriever,
                     "question": RunnablePassthrough()
                 }
+                | self.log_docs_runnable  # <--- Insert logging step here
                 | prompt
                 | self.llm
                 | StrOutputParser()
@@ -118,197 +170,94 @@ class ChatHandler:
 
         return chain
 
-    def create_validation_chain(self):
-        """Create chain for API validation and fixing"""
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", """You are an API validation assistant. 
-            Analyze the API call and any errors, then suggest specific fixes.
-            Include code examples in your response.
-
-            Previous conversation context: {conversation_context}
-            API call: {api_call}
-            Validation result: {validation_result}"""),
-            ("user", "What fixes or improvements would you suggest for this API call?")
-        ])
-
-        return prompt | self.llm | StrOutputParser()
-
-    def _plan_actions(self, message: str) -> List[AgentAction]:
-        """Determine necessary actions based on message content"""
-        actions = []
-
-        # Check for API calls
-        if "curl" in message.lower() or "api" in message.lower():
-            actions.append(AgentAction.VALIDATE_API)
-
-        # Check for error messages
-        if any(err in message.lower() for err in ["error", "failed", "doesn't work", "wrong"]):
-            actions.append(AgentAction.FIX_ERROR)
-
-        # Check for region-related queries
-        if "region" in message.lower() and "error" in message.lower():
-            actions.append(AgentAction.SUGGEST_ALTERNATIVES)
-
-        return actions
-
-    def _extract_api_calls(self, text: str) -> List[str]:
-        """Extract API calls from text"""
-        curl_commands = re.finditer(r"```(?:bash|shell)?\s*(curl .*?)```", text, re.DOTALL)
-        return [match.group(1).strip() for match in curl_commands]
-
-    async def _handle_api_validation(self, api_call: str) -> Dict:
-        """Handle API validation and fixes"""
-        # Validate API call
-        is_valid, error_msg, fixes = self.api_validator.validate_api_call(api_call)
-
-        if not is_valid:
-            # Get fixed version if available
-            fixed_call = self.error_fixer.fix_api_call(api_call, error_msg, fixes)
-
-            # Get explanation using validation chain
-            explanation = await self.validation_chain.ainvoke({
-                "api_call": api_call,
-                "validation_result": error_msg,
-                "conversation_context": self.conversation_state
-            })
-
-            return {
-                "is_valid": False,
-                "error": error_msg,
-                "fixed_call": fixed_call,
-                "explanation": explanation
-            }
-
-        return {"is_valid": True}
-
-    async def get_response(self, message: str, conversation_id: Optional[str] = None) -> Dict:
-        """Enhanced message processing with agentic behavior"""
+    async def get_response(self,
+                           message: str,
+                           conversation_id: str) -> Dict:
+        """
+        Main method to handle user messages:
+          1) Store message in conversation (which may trigger summarization).
+          2) Build a final prompt from:
+             - Summaries + recent messages (ConversationHandler)
+             - The user's new question
+          3) Pass that combined "question" to the retrieval chain
+          4) Run the agent on the LLM's answer to find/fix any API calls
+          5) Return the (possibly updated) response
+        """
         try:
-            logger.info(f"Processing message: {message[:50]}...")
+            logger.info(f"New user message: {message[:50]}...")
 
-            # Update conversation state
-            if conversation_id not in self.conversation_state:
-                self.conversation_state[conversation_id] = []
-            self.conversation_state[conversation_id].append({"role": "user", "content": message})
+            # 1. Clean and store user message
+            cleaned = clean_text(message)
+            self.conversation_handler.add_message(
+                conversation_id=conversation_id,
+                role="user",
+                content=cleaned
+            )
+            logger.info(conversation_id)
+            # 2. Build the conversation context (summary + recent messages)
+            conversation_context = self.conversation_handler.get_context_for_llm(conversation_id)
+            logger.info("added conversation context")
 
-            # Clean input
-            cleaned_message = clean_text(message)
+            # For RAG, combine conversation context and user question into a single prompt
+            user_question = f"{conversation_context}\n\nNew question:\n{cleaned}"
+            logger.info("Final prompt to LLM (truncated): " + user_question[:1500])
 
-            # Plan actions
-            actions = self._plan_actions(cleaned_message)
-            response_parts = []
+            # 3. Run the retrieval chain to get LLM's raw response
+            response_text = await self.retrieval_chain.ainvoke(user_question)
+            logger.info("response_text:" + response_text)
 
-            # Execute planned actions
-            for action in actions:
-                if action == AgentAction.VALIDATE_API:
-                    api_calls = self._extract_api_calls(cleaned_message)
-                    for api_call in api_calls:
-                        validation_result = await self._handle_api_validation(api_call)
-                        if not validation_result["is_valid"]:
-                            response_parts.append(
-                                f"I noticed an issue with your API call:\n\n"
-                                f"{validation_result['explanation']}\n\n"
-                                f"Here's the corrected version:\n```bash\n{validation_result['fixed_call']}\n```"
-                            )
-
-                elif action == AgentAction.FIX_ERROR:
-                    fixes = self.error_fixer.analyze_error({"message": cleaned_message})
-                    if fixes:
-                        response_parts.append(
-                            f"I can help fix that error. Here are the suggested fixes:\n"
-                            f"{self.error_fixer.get_fix_explanation()}"
-                        )
-
-                elif action == AgentAction.SUGGEST_ALTERNATIVES:
-                    suggestions = self._suggest_alternatives(cleaned_message)
-                    if suggestions:
-                        response_parts.append(
-                            f"Here are some alternative approaches you might find helpful:\n"
-                            f"{suggestions}"
-                        )
-
-            # Get base response from RAG chain
-            rag_response = await self.retrieval_chain.ainvoke(cleaned_message)
-            response_parts.insert(0, rag_response)  # Add RAG response at the beginning
-
-            # Combine responses
-            final_response = "\n\n".join(response_parts)
-            formatted_response = format_api_response(final_response)
-
-            # Update conversation state
-            self.conversation_state[conversation_id].append(
-                {"role": "assistant", "content": formatted_response}
+            # --- NEW STEP: Let the agent parse & fix API calls ---
+            agent_result = await self.agent.process_message(
+                message=response_text,
+                conversation_id=conversation_id
             )
 
-            logger.info("Successfully generated enhanced response")
+            if agent_result.get("agent_response"):
+                # 1. Store the agent's message in the conversation (under 'agent' role)
+                self.conversation_handler.add_agent_response(
+                    conversation_id,
+                    agent_result["agent_response"]
+                )
 
+                # 2. Append it to the LLM's original response
+                combined_response = f"{response_text}\n\n---\n{agent_result['agent_response']}"
+            else:
+                combined_response = response_text
+
+            # 4. Store the final “assistant” message in the conversation
+            #    (This final message includes possible agent fixes.)
+            self.conversation_handler.add_message(
+                conversation_id=conversation_id,
+                role="assistant",
+                content=combined_response
+            )
+
+            # 5. Return response in a dict
             return {
-                "response": formatted_response,
-                "conversation_id": conversation_id,
-                "state": {
-                    "actions_taken": [a.value for a in actions],
-                    "conversation_length": len(self.conversation_state.get(conversation_id, []))
-                }
+                "response": combined_response,
+                "conversation_id": conversation_id
             }
 
         except Exception as e:
-            logger.error(f"Error generating response: {e}")
+            logger.error("Error in get_response:", exc_info=True)
             return {
-                "response": "I apologize, but I encountered an error. Please try again.",
-                "conversation_id": conversation_id,
-                "error": str(e)
+                "response": f"An error occurred: {str(e)}",
+                "conversation_id": conversation_id
             }
 
-    def _suggest_alternatives(self, message: str) -> str:
-        """Generate alternative suggestions based on context"""
-        if "region" in message.lower():
-            return (
-                "1. You can use our region normalization endpoint first\n"
-                "2. Check the complete list of supported regions at our docs\n"
-                "3. Try using the parent region (e.g., 'United States' instead of specific city)"
-            )
-        return ""
+    def log_docs_step(inputs: dict) -> dict:
+        """
+        A small function that logs the docs from 'context'
+        and returns the same inputs so the chain continues.
+        """
+        docs = inputs.get("context", [])
+        logger.info("=== RAG Retrieved Documents ===")
+        if isinstance(docs, list):
+            for i, doc in enumerate(docs, start=1):
+                logger.info(f"Doc #{i} metadata: {doc.metadata}")
+                logger.info(f"Doc #{i} content (truncated): {doc.page_content[:300]}...")
+        else:
+            logger.info("No docs or context was found!")
+        return inputs
 
-
-class ErrorFixer:
-    """Handles API error analysis and fixes"""
-
-    def __init__(self):
-        self._last_fix_explanation = ""
-
-    def analyze_error(self, error_context: Dict) -> List[Dict]:
-        """Analyze API errors and suggest fixes"""
-        fixes = []
-        error_message = error_context.get("message", "")
-
-        if "No mapping found for REGION" in error_message:
-            fixes.append({
-                "type": "region_normalization",
-                "description": "Region format needs normalization",
-                "action": "normalize_region"
-            })
-            self._last_fix_explanation = (
-                "The region format needs to match our supported regions exactly. "
-                "Try using the full region name (e.g., 'San Francisco, California, United States')"
-            )
-
-        return fixes
-
-    def get_fix_explanation(self) -> str:
-        """Get explanation of the latest fix applied"""
-        return self._last_fix_explanation
-
-    def fix_api_call(self, api_call: str, error_msg: str, fixes: Dict) -> str:
-        """Apply fixes to an API call"""
-        fixed_call = api_call
-
-        for fix_type, fix_value in fixes.items():
-            if fix_type == "suggested_region":
-                # Apply region fix
-                fixed_call = re.sub(
-                    r'"([^"]+)"(?=\s*\]\s*}\s*,\s*"filter_type":\s*"REGION")',
-                    f'"{fix_value}"',
-                    fixed_call
-                )
-
-        return fixed_call
+    log_docs_runnable = RunnableLambda(log_docs_step)
